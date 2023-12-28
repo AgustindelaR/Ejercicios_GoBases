@@ -20,23 +20,24 @@ func letrasDeUnaPalabra(palabra string) {
 func prestamosBanco(edad int, empleado bool, antiguedad int, sueldo int) {
 	fmt.Printf("Caso de edad %d, empleado = %t, antiguedad = %d años, sueldo = %d \n",
 		edad, empleado, antiguedad, sueldo)
-
-	if edad >= 22 && empleado && antiguedad >= 1 {
-		if sueldo >= 100000 {
-			println("El banco cede prestamo sin interes")
-		} else {
-			println("El banco cede prestamo con interes")
-		}
-	} else {
+	switch {
+	case edad >= 22 && empleado && antiguedad >= 1 && sueldo >= 100000:
+		println("El banco cede prestamo sin interes")
+	case edad >= 22 && empleado && antiguedad >= 1:
+		println("El banco cede prestamo con interes")
+	default:
 		println("El banco no cede prestamo")
 	}
 }
 
 func numeroDelMes(numero int) {
+	if numero <= 0 && numero > 12 {
+		println("Numero ingresado invalido, ingrese número entre 1 y 12")
+	}
 	meses := []string{"Enero", "Febrero", "marzo", "Abril", "Mayo", "Junio",
 		"Julio", "Agosto", "Septiemre", "Octubre", "Noviembre", "Diciembre"}
 
-	fmt.Printf("El numero %d, corresponde al mes %s\n", numero, meses[numero])
+	fmt.Printf("El numero %d, corresponde al mes %s\n", numero, meses[numero-1])
 }
 
 func queEdadTiene() {
@@ -72,7 +73,7 @@ func ej1() {
 	letrasDeUnaPalabra("Agustin")
 	separadorCorto()
 
-	prestamosBanco(23, true, 3, 100001)
+	prestamosBanco(23, true, 3, 10000221)
 	separadorCorto()
 
 	numeroDelMes(6)

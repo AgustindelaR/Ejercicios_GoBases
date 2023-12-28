@@ -13,7 +13,6 @@ func separadorCorto() {
 func main() {
 	println()
 	separador()
-	println()
 	ej0()
 	println()
 	ej1()
