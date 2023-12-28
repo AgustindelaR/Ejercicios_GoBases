@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func separador() {
-	fmt.Println("--------------------")
+	fmt.Println("-------------------------------------")
 }
 
 func separadorCorto() {
@@ -11,5 +11,12 @@ func separadorCorto() {
 }
 
 func main() {
+	println()
+	separador()
+	println()
 	ej0()
+	println()
+	ej1()
+	separador()
+	println()
 }

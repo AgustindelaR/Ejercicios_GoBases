@@ -15,7 +15,7 @@ func clima(temperatura float32, presion float32, humedad int) {
 
 func ej0() {
 	fmt.Println("Ejercicio 0:")
-	println()
+	separadorCorto()
 	nombre()
 	separadorCorto()
 	clima(27.5, 104.7, 64)
