@@ -18,4 +18,7 @@ func main() {
 	ej1()
 	separador()
 	println()
+	ej2()
+	separador()
+	println()
 }
