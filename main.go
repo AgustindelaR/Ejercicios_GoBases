@@ -10,7 +10,7 @@ func separadorCorto() {
 	fmt.Println("------------")
 }
 
-func main() {
+func ejerciciosAntesDeEstructurasDeDatos() {
 	println()
 	separador()
 	ej0()
@@ -21,4 +21,8 @@ func main() {
 	ej2()
 	separador()
 	println()
+}
+
+func main() {
+	ejerciciosAntesDeEstructurasDeDatos()
 }
