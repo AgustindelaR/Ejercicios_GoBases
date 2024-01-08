@@ -1,4 +1,4 @@
-package main
+package estructurasDeControl
 
 import (
 	"fmt"
@@ -64,20 +64,4 @@ func queEdadTiene() {
 	println("Elimino a Pedro")
 	delete(employees, "Pedro")
 	fmt.Println(employees)
-}
-
-func ej1() {
-	println("Ejercicio 1: Estructuras de control")
-	separadorCorto()
-
-	letrasDeUnaPalabra("Agustin")
-	separadorCorto()
-
-	prestamosBanco(23, true, 3, 10000221)
-	separadorCorto()
-
-	numeroDelMes(6)
-	separadorCorto()
-
-	queEdadTiene()
 }

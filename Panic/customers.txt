@@ -1,0 +1,1 @@
+Hola, si lees esto el programa no falló y accediste al txt correctamente

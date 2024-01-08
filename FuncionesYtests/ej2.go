@@ -42,19 +42,3 @@ func calcularSalario(horas int, categoria string) (salario int) {
 	println(" y categoria", categoria)
 	return
 }
-
-func ej2() {
-	println("Ejercicio 2: Funcionesl")
-	separadorCorto()
-
-	impuestosDeSalario(100000)
-	separadorCorto()
-
-	estudiantes := []int{10, 6, 8, 4, 5, 6}
-	calcularPromedio(estudiantes)
-	separadorCorto()
-
-	calcularSalario(20, "A")
-	separadorCorto()
-
-}
